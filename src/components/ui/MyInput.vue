@@ -15,7 +15,7 @@
       width="16"
       height="16"
       class="icon"
-      :src="`./src/assets/icons/${icon}`"
+      :src="`/test-task/src/assets/icons/${icon}`"
       alt=""
     />
     <span

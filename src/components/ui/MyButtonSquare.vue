@@ -24,7 +24,7 @@ defineProps(["value"]);
     background: $gray800;
     cursor: default;
   }
-  &-value {
+  span {
     color: $gray500;
     text-align: center;
   }
