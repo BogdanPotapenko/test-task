@@ -69,13 +69,11 @@ watch(isPopup, () => {
   }
   @media (max-width: 1024px) {
     grid-template-rows: 50% 50%;
+    min-height: 950px;
   }
 
-  @media (max-width: 640px) {
-    min-height: 700px;
-  }
   @media (max-width: 400px) {
-    min-height: 650px;
+    min-height: 800px;
   }
 
   &-content {

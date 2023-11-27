@@ -129,6 +129,7 @@ const onSubmit = async (values) => {
     grid-template-columns: 50% 50%;
   }
   @media (max-width: 1024px) {
+    min-height: 900px;
     grid-template-rows: 37% 63%;
   }
   &-banner {
