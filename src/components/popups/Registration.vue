@@ -21,20 +21,16 @@
     <div class="registration-area">
       <h4 class="registration-area-title">Registration</h4>
       <form @submit.prevent="onSubmit" class="registration-form" action="">
-        <my-input
-          v-model="email"
-          label="Email"
-          type="text"
-          icon="email.svg"
-          :error="erroreEmail"
-        ></my-input>
+        <my-input v-model="email" label="Email" type="text" :error="erroreEmail"
+          ><img src="../../assets/icons/email.svg" alt=""
+        /></my-input>
         <my-input
           v-model="password"
           label="Password"
           type="password"
-          icon="password.svg"
           :error="errorPassword"
-        ></my-input>
+          ><img src="../../assets/icons/password.svg" alt=""
+        /></my-input>
         <div class="checkboox-area">
           <my-checkbox
             v-model="checkbox"

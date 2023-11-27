@@ -10,14 +10,7 @@
       class="input default-text"
       :class="error && modelValue.length > 0 ? 'input-error' : ''"
     />
-
-    <img
-      width="16"
-      height="16"
-      class="icon"
-      :src="`/test-task/src/assets/icons/${icon}`"
-      alt=""
-    />
+    <span class="icon"><slot /></span>
     <span
       class="label default-text"
       :class="modelValue.length > 0 ? 'input-valid' : ''"
@@ -33,7 +26,7 @@
 <script setup>
 const emit = defineEmits(["update:modelValue"]);
 
-defineProps(["label", "type", "icon", "error", "modelValue"]);
+defineProps(["label", "type", "error", "modelValue"]);
 
 const updateValue = (e) => {
   emit("update:modelValue", e.target.value);
@@ -128,3 +121,6 @@ const updateValue = (e) => {
   }
 }
 </style>
+
+https://bogdanpotapenko.github.io/test-task/assets/logo-870A2ySR.svg
+https://bogdanpotapenko.github.io/test-task/assets/icons/email.svg
